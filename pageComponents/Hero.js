@@ -18,7 +18,7 @@ export default function Hero() {
           </p>
         </div>
         <div className="hero__bg">
-          <Image src={multorHero} alt="multor" layout="fill" />
+          <Image src={multorHero} alt="multor" layout="responsive" />
         </div>
       </div>
     </section>

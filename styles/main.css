@@ -441,6 +441,12 @@ section {
   height: 100%;
 }
 
+@media screen and (max-width: 900px) {
+  .hero__bg {
+    display: none;
+  }
+}
+
 .appointment {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -543,8 +549,6 @@ section {
 
 .features__feature {
   width: 90%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -553,6 +557,13 @@ section {
           justify-content: space-between;
   margin: 6rem 0;
   position: relative;
+}
+
+@media screen and (max-width: 900px) {
+  .features__feature {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .features__feature__wrapper {
