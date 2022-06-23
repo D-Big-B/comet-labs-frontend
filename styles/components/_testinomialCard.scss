@@ -1,0 +1,45 @@
+.testinomial__card {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+
+  &__rating {
+    width: 100px;
+  }
+
+  &__data {
+    font-size: $heading-h2-sm;
+    font-family: $secondary-font;
+    font-style: italic;
+    font-weight: 400;
+    width: 35ch;
+    margin: 2rem 0;
+    line-height: 2rem;
+    @include mobile {
+      font-size: $para-lg;
+      margin: 1rem;
+    }
+  }
+
+  &__person {
+    display: flex;
+
+    &__info {
+      margin: 0 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 1rem 0;
+
+      h1 {
+        font-size: $para-lg;
+        font-family: $secondary-font;
+        font-weight: 600;
+      }
+      p {
+        font-size: $para-lg;
+        font-family: $secondary-font;
+      }
+    }
+  }
+}

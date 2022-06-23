@@ -1,0 +1,27 @@
+.benefit__card {
+  display: flex;
+  width: 400px;
+  margin: 3rem 0rem;
+
+  @include mobile {
+    width: 300px;
+  }
+
+  &__image {
+    flex: 1;
+  }
+  &__data {
+    flex: 5;
+    h2 {
+      font-size: $heading-p-lg;
+      font-family: $secondary-font;
+      font-weight: 600;
+    }
+    p {
+      font-size: $para-lg;
+      font-family: $secondary-font;
+      margin: 1rem 0;
+      line-height: 1.5rem;
+    }
+  }
+}

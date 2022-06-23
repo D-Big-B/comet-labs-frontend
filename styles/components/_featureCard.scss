@@ -1,0 +1,24 @@
+.feature__card {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  margin: 1rem;
+  &__image {
+    width: 300px;
+  }
+  &__title {
+    font-size: $heading-p-lg;
+    font-family: $primary-font;
+    font-weight: 600;
+    margin: 2rem 0;
+
+    @include mobile {
+    }
+  }
+  &__info {
+    font-size: $para-lg;
+    font-family: $secondary-font;
+    line-height: 1.4rem;
+    letter-spacing: 1.2px;
+  }
+}

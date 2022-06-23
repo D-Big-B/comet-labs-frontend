@@ -1,0 +1,57 @@
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 6rem;
+
+  @include tablet {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__image {
+    width: 500px;
+
+    @include mobile {
+      width: 320px;
+    }
+  }
+
+  &__info {
+    width: 50ch;
+    display: flex;
+    flex-direction: column;
+    @include mobile {
+      width: 40ch;
+    }
+
+    h1 {
+      color: $color-secondary;
+      font-size: $heading-p-lg;
+      font-family: $primary-font;
+      font-weight: 700;
+      margin: 1rem 0;
+    }
+    h2 {
+      font-size: $heading-h2-lg;
+      font-family: $primary-font;
+      font-weight: 600;
+      margin: 2rem 0;
+
+      @include mobile {
+        margin: 1rem 0;
+        font-size: $heading-h2-md;
+      }
+    }
+
+    p {
+      font-family: $secondary-font;
+      line-height: 1rem;
+      letter-spacing: 1px;
+      @include mobile {
+        line-height: 1.3rem;
+      }
+    }
+  }
+}

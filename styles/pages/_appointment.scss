@@ -1,0 +1,39 @@
+.appointment {
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  @include tablet {
+    flex-direction: column-reverse;
+  }
+
+  &__cards {
+    height: 100%;
+    margin: 0rem;
+  }
+
+  &__form {
+    .textField {
+      background-color: whitesmoke;
+      color: $color-black;
+    }
+    &__container {
+      background-color: $color-primary;
+      width: fit-content;
+      padding: 3rem;
+      margin-top: -2rem;
+      margin-left: 0rem;
+
+      @include tablet {
+        width: 80vw;
+        padding: 3rem 3rem;
+        margin-top: 0rem;
+      }
+      @include mobile {
+        margin-top: -10rem;
+      }
+    }
+  }
+}

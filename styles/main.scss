@@ -1,0 +1,17 @@
+@import "utilities/variables";
+@import "utilities/mixins";
+
+@import "base/reset";
+@import "base/base";
+
+@import "layout/main";
+@import "layout/footer";
+
+@import "components/benefitCard";
+@import "components/featureCard";
+@import "components/testinomialCard";
+
+@import "pages/hero";
+@import "pages/appointment";
+@import "pages/features";
+@import "pages/about";

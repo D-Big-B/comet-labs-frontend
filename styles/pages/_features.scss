@@ -1,0 +1,44 @@
+.features {
+  display: flex;
+  flex-direction: column;
+
+  &__heading {
+    color: $color-secondary;
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: $para-lg;
+    letter-spacing: 1px;
+    margin: 6rem 0 0 0;
+
+    @include mobile {
+      margin: 3rem 0 0 0;
+    }
+  }
+
+  &__testinomial {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6rem 0;
+  }
+
+  &__feature {
+    width: 85%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    margin: 6rem 0;
+    position: relative;
+  }
+}
+.features__feature__wrapper {
+  background-color: $color-secondary-light;
+  position: absolute;
+  width: 150%;
+  height: 120%;
+  left: -20%;
+  top: -10%;
+  z-index: -1;
+}
