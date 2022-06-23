@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import multorLogo from "./../assets/images/multor-logo.svg";
-import { Grid, Typography } from "@mui/material";
+import multorHero from "./../assets/images/multor-hero.jpg";
 
 export default function Hero() {
   return (
@@ -16,6 +16,9 @@ export default function Hero() {
             No need to get clever. Tell people exactly what offering, then use
             this space to communicate your key value proposition.
           </p>
+        </div>
+        <div className="hero__bg">
+          <Image src={multorHero} alt="multor" layout="fill" />
         </div>
       </div>
     </section>
